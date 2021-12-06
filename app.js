@@ -1,6 +1,7 @@
 let btn = document.querySelector('#button');
 let input = document.querySelector('#input');
 let inputBin = document.querySelector('#inputBin');
+let clearBtn = document.querySelector('#clearBtn');
 let output = document.querySelector('#output');
 let binNumber='';
 
@@ -29,3 +30,9 @@ function convert2to10() {
     output.textContent = number10;
     return null;
 };
+clearBtn.addEventListener('click', function(){
+    input.value = '';
+    inputBin.textContent = '';
+    output.textContent = '';
+    binNumber=''
+})
